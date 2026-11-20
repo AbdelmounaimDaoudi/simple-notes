@@ -1,0 +1,8 @@
+
+services:
+  app:
+    build: .
+    container_name: simple-notes-container
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
